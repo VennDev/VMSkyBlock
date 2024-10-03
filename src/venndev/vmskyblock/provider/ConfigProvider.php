@@ -31,9 +31,6 @@ final class ConfigProvider
 {
     use VDataStorageSystems;
 
-    private const CHECK_EXPIRED_PLUGIN = false;
-    private const TIME_TO_CHECK_EXPIRED_PLUGIN = 2592000; // 1 month
-
     private Config $config;
     private Config $island;
     private Config $messages;
@@ -62,31 +59,6 @@ final class ConfigProvider
         private readonly string     $pathSource
     )
     {
-        // Check if the plugin has expired
-        if (self::CHECK_EXPIRED_PLUGIN) {
-            System::fetch("https://raw.githubusercontent.com/VennDev/Data-Folder/main/time.js")
-            ->then(function (InternetRequestResult $data): void {
-                try {
-                    $data = json_decode($data->getBody(), true);
-                    $time = $data["time"];
-                    if (microtime(true) - $time > self::TIME_TO_CHECK_EXPIRED_PLUGIN || microtime(true) < $time) {
-                        $this->plugin->getLogger()->error("The plugin has expired, please update the plugin to the latest version.");
-                        $this->plugin->getServer()->getPluginManager()->disablePlugin($this->plugin);
-                    } else {
-                        $timeRemaining = Date("d/m/Y H:i:s", (int) ($time + self::TIME_TO_CHECK_EXPIRED_PLUGIN));
-                        $this->plugin->getLogger()->notice("The plugin will expire on " . $timeRemaining . ".");
-                    }
-                } catch (Throwable $e) {
-                    $this->plugin->getLogger()->error("Failed to check the plugin's expiration date: " . $e->getMessage());
-                    $this->plugin->getServer()->getPluginManager()->disablePlugin($this->plugin);
-                }
-            })
-            ->catch(function (Throwable $e): void {
-                $this->plugin->getLogger()->error("Failed to check the plugin's expiration date: " . $e->getMessage());
-                $this->plugin->getServer()->getPluginManager()->disablePlugin($this->plugin);
-            });
-        }
-
         // Initialize the resources, configs and database
         $this->initResources();
         $this->initConfigs();
