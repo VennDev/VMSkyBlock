@@ -1,0 +1,41 @@
+---
+###################################################
+# One of the best SkyBlock plugins for PMMP/PocketMine-MP
+#
+# Thank you for using VMSkyBlock!
+#
+# If you need help, please contact me with the following information:
+# Discord: https://discord.gg/rMnaYM5UPX
+# GitHub: https://github.com/VennDev
+# Email: pnam5005@gmail.com
+###################################################
+
+### VMSkyBlock Configuration (v1.0.0-PREMIUM) ###
+
+vmskyblock:
+  prefix: '&l&8[&r&bVMSkyBlock&l&8]&r '
+
+  database-settings:
+    host: localhost
+    port: 3306
+    database: vmskyblock
+    username: root
+    password: ''
+    type: mysql # mysql or sqlite
+    enabled: false
+
+  settings:
+    # This is the time it takes for the plugin to save the data to the database
+    # Default is 30 seconds
+    time-to-save: 30
+
+    # You want to use the world unload feature?
+    # Auto unload the world when no one is in the world
+    auto-unload-worlds: false
+
+    command:
+      name: vmskyblock
+      aliases:
+        - vmsb
+        - vmskyb
+...

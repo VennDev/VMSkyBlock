@@ -1,0 +1,30 @@
+---
+name: VMSkyBlock
+main: venndev\vmskyblock\VMSkyBlock
+version: 1.0.0-PREMIUM
+api: 5.0.0
+author: VennDev
+description: VMSkyBlock is a SkyBlock plugin for PocketMine-MP.
+database: true
+depend: [
+  VPlayerDataSaver,
+  VDimensionFix
+]
+virions: [
+  LibVapmPMMP,
+  VFormOOPAPI,
+  VDataStorageSystems,
+  VapmDatabase,
+  VDoPlayer
+]
+commands:
+  # This is the command only for console
+  vmsbconsole:
+    description: VMSkyBlock Console Command
+    usage: /vmsbconsole <giveitemportal|setsizeisland> <args>
+    permission: vmsb.command.console
+permissions:
+  vmsb.command.console:
+    description: Allows access to VMSkyBlock Console Command
+    default: op
+...

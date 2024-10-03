@@ -1,0 +1,15 @@
+{
+    "name": "venndev/vm-sky-block",
+    "description": "VMSkyBlock is a SkyBlock plugin for PocketMine-MP.",
+    "type": "project",
+    "license": "Custom",
+    "authors": [
+        {
+            "name": "VennV",
+            "email": "111500380+VennDev@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "stichoza/google-translate-php": "^5.2"
+    }
+}

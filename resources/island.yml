@@ -1,0 +1,72 @@
+---
+###################################################
+# One of the best SkyBlock plugins for PMMP/PocketMine-MP
+#
+# Thank you for using VMSkyBlock!
+#
+# If you need help, please contact me with the following information:
+# Discord: https://discord.gg/rMnaYM5UPX
+# GitHub: https://github.com/VennDev
+# Email: pnam5005@gmail.com
+###################################################
+
+### Island Configuration ###
+
+# This is setting void in island
+void:
+  y: -1
+  enabled: true
+
+island-nether:
+  level-settings:
+    enabled: true
+    level: 10 # The level required to join the nether island
+
+  # This is the item that will be used to create the portal
+  item-create-portal:
+    item: flint_and_steel
+    name: "&6Create Nether Portal"
+    lore:
+      - "&7Right click to create a nether portal"
+
+  # Portal settings
+  portal-settings:
+    width: 2
+    height: 4
+    border-material: netherite_block
+    body-material: nether_portal
+    name: "&6Nether Portal"
+
+island-the-end:
+  level-settings:
+    enabled: true
+    level: 20 # The level required to join the end island
+
+  # This is the item that will be used to create the portal
+  item-create-portal:
+    item: flint_and_steel
+    name: "&6Create End Portal"
+    lore:
+      - "&7Right click to create a end portal"
+
+  # Portal settings
+  portal-settings:
+    width: 2
+    height: 4
+    border-material: end_stone
+    body-material: nether_portal
+    name: "&6End Portal"
+
+# This is list of blocks that can get xp when broken
+valuable-blocks:
+  enabled: true
+  blocks:
+    diamond_block:
+      value: 10 # The amount of xp you get when you break this block
+
+      # Note: Always must have column `reward`
+      nether:
+        - reward: "say hi %player%"
+      the-end:
+        - reward: "say hi %player%"
+...

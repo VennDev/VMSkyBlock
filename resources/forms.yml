@@ -1,0 +1,231 @@
+---
+###################################################
+# One of the best SkyBlock plugins for PMMP/PocketMine-MP
+#
+# Thank you for using VMSkyBlock!
+#
+# If you need help, please contact me with the following information:
+# Discord: https://discord.gg/rMnaYM5UPX
+# GitHub: https://github.com/VennDev
+# Email: pnam5005@gmail.com
+###################################################
+
+### This is the form configuration file ###
+
+forms:
+  # This is the status of content in the form
+  status:
+    enabled: "&aEnabled"
+    disabled: "&cDisabled"
+
+  # This is the form for the main menu for player
+  skyblock-form:
+    title: "&l&bSkyBlock Menu"
+    content: "&7Select an option"
+    button-join: # This is name of the button, you can call it is labeled
+      text: "&0Join"
+      image-path: "textures/items/nether_star"
+    button-visit: # This is name of the button, you can call it is labeled
+      text: "&0Visit"
+      image-path: "textures/items/ender_pearl"
+    button-top: # This is name of the button, you can call it is labeled
+      text: "&0Top"
+      image-path: "textures/items/iron_sword"
+    button-manager: # This is name of the button, you can call it is labeled
+      text: "&0Manager"
+      image-path: "textures/items/iron_ingot"
+    button-info: # This is name of the button, you can call it is labeled
+      text: "&0Info"
+      image-path: "textures/blocks/slime"
+    button-quest: # This is name of the button, you can call it is labeled
+      text: "&0Quest"
+      image-path: "textures/items/book_written"
+
+    # This is the child-forms
+    child-forms:
+      visit-form:
+        title: "&l&bVisit"
+        content: "&7Select an option"
+        drop-down-islands: # This is name of the drop-down, you can call it is labeled
+          text: "&9Select player"
+      top-form:
+        title: "&l&bTop"
+        content: "&7Input the top number"
+        input-limit: # This is name of the input, you can call it is labeled
+          text: "&9Limit"
+          place-holder: "Input number"
+          default: "10"
+      manager-form:
+        title: "&l&bManager"
+        content: "&7Select an option"
+        button-settings: # This is name of the button, you can call it is labeled
+          text: "&0Settings"
+          image-path: "textures/items/comparator"
+        button-set-name: # This is name of the button, you can call it is labeled
+          text: "&0Set Name"
+          image-path: "textures/items/acacia_hanging_sign"
+        button-set-spawn: # This is name of the button, you can call it is labeled
+          text: "&0Set Spawn"
+          image-path: "textures/items/apple"
+        button-add-member: # This is name of the button, you can call it is labeled
+          text: "&0Add Member"
+          image-path: "textures/items/bed_green"
+        button-remove-member: # This is name of the button, you can call it is labeled
+          text: "&0Remove Member"
+          image-path: "textures/items/bed_red"
+        button-members: # This is name of the button, you can call it is labeled
+          text: "&0Members"
+          image-path: "textures/items/beetroot"
+        button-ban-item: # This is name of the button, you can call it is labeled
+          text: "&0Ban Item"
+          image-path: "textures/items/book_written"
+        button-unban-item: # This is name of the button, you can call it is labeled
+          text: "&0Unban Item"
+          image-path: "textures/items/book_writable"
+        button-ban: # This is name of the button, you can call it is labeled
+          text: "&0Ban"
+          image-path: "textures/items/redstone_dust"
+        button-unban: # This is name of the button, you can call it is labeled
+          text: "&0Unban"
+          image-path: "textures/items/repeater"
+        button-kick: # This is name of the button, you can call it is labeled
+          text: "&0Kick"
+          image-path: "textures/items/sign"
+        button-delete: # This is name of the button, you can call it is labeled
+          text: "&cDelete"
+          image-path: "textures/items/ruby"
+      info-form:
+        title: "&l&bInfo Island"
+        content:
+          - "&7-----Info-----"
+          - "&7Name: &9%island-name%"
+          - "&7Owner: &9%island-owner%"
+          - "&7Size: &9%island-size%"
+          - "&7Level: &9%island-level% &a(%island-xp% XP)"
+          - "&7Members: &9%island-members%"
+          - "&7"
+          - "&7-----Settings-----"
+          - "&7PvP: &9%island-pvp%"
+          - "&7Allow Visitors: &9%island-allow-visitors%"
+          - "&7Drop Items: &9%island-drop-items%"
+          - "&7Pickup Items: &9%island-pickup-items%"
+          - "&7"
+          - "&7-----Date-----"
+          - "&7Created: &9%island-created%"
+
+    # This is the form for the settings menu for player
+    skyblock-settings-form:
+      title: "&l&bSettings"
+      content: "&7Select an option"
+      toggle-pvp: # This is name of the toggle, you can call it is labeled
+        text: "&7PvP"
+      toggle-allow-visitors: # This is name of the toggle, you can call it is labeled
+        text: "&7Allow Visitors"
+      toggle-drop-items: # This is name of the toggle, you can call it is labeled
+        text: "&7Drop Items"
+      toggle-pickup-items: # This is name of the toggle, you can call it is labeled
+        text: "&7Pickup Items"
+
+    # This is the form for the set name menu for player
+    skyblock-set-name-form:
+      title: "&l&bSet Name"
+      content: "&7Input the name"
+      input-name: # This is name of the input, you can call it is labeled
+        text: "&9Name"
+        place-holder: "Input name"
+        default: "My Island"
+
+    # This is the form for the add member menu for player
+    skyblock-add-member-form:
+      title: "&l&bAdd Member"
+      content: "&7Input the player name"
+      input-player-name: # This is name of the input, you can call it is labeled
+        text: "&9Player Name"
+        place-holder: "Input player name"
+
+    # This is the form for the remove member menu for player
+    skyblock-remove-member-form:
+      title: "&l&bRemove Member"
+      content: "&7Select an option"
+      drop-down-members: # This is name of the drop-down, you can call it is labeled
+        text: "&9Select player"
+
+    # This is the form for the ban player menu for player
+    skyblock-ban-player-form:
+      title: "&l&bBan Player"
+      content: "&7Input the player name"
+      input-player-name: # This is name of the input, you can call it is labeled
+        text: "&9Player Name"
+        place-holder: "Input player name"
+
+    # This is the form for the unban player menu for player
+    skyblock-unban-player-form:
+      title: "&l&bUnban Player"
+      content: "&7Input the player name"
+      drop-down-players: # This is name of the drop-down, you can call it is labeled
+        text: "&9Select player"
+
+    # This is the form for the kick player menu for player
+    skyblock-kick-player-form:
+      title: "&l&bKick Player"
+      content: "&7Input the player name"
+      drop-down-players: # This is name of the drop-down, you can call it is labeled
+        text: "&9Select player"
+
+    # This is the form for the delete island menu for player
+    # This is modal form
+    skyblock-delete-island-form:
+      title: "&l&bDelete Island"
+      content: "&7Are you sure?"
+      button-yes:
+        text: "&aYes"
+      button-no:
+        text: "&cNo"
+
+    # This is the form for the quest manager menu for player
+    skyblock-quest-manager-form:
+      title: "&l&bQuest Manager"
+      content: "&7Select an option"
+      button-quest:
+        text: "&0Quest"
+        image-path: "textures/items/book_written"
+      button-history:
+        text: "&0History"
+        image-path: "textures/items/book_writable"
+
+    # This is the form for the quest
+    skyblock-quest-form:
+      title: "&l&bQuest"
+      content: "&7Select an option"
+      button-quest:
+        text: "&0%quest-name%"
+        image-path: "textures/items/book_written"
+
+    # This is the form for the view quest
+    skyblock-view-quest-form:
+      title: "&l&bView Quest"
+      content:
+        - "&7-----Quest-----"
+        - "&7Name: &9%quest-name%"
+        - "&7Description: &9%quest-description%"
+        - "&7"
+        - "&7-----Progress-----"
+        - "&7Progress: &9%quest-progress%"
+
+    # This is the form for the view history quest
+    skyblock-history-quest-form:
+      title: "&l&bHistory Quest"
+      content: "&7Select an option"
+      button-quest:
+        text: "&0%quest-name%"
+        image-path: "textures/items/book_written"
+
+    # This is the form for remove the portal
+    skyblock-remove-portal-form:
+      title: "&l&bRemove Portal"
+      content: "&7Are you sure?"
+      button-yes:
+        text: "&aYes"
+      button-no:
+        text: "&cNo"
+...

@@ -1,0 +1,176 @@
+---
+###################################################
+# One of the best SkyBlock plugins for PMMP/PocketMine-MP
+#
+# Thank you for using VMSkyBlock!
+#
+# If you need help, please contact me with the following information:
+# Discord: https://discord.gg/rMnaYM5UPX
+# GitHub: https://github.com/VennDev
+# Email: pnam5005@gmail.com
+###################################################
+
+### Messages Configuration ###
+
+# No Permission
+no-permission: "&cYou do not have permission to do this."
+
+# Player Only
+player-only: "&cThis command can only be executed by a player."
+
+# Cannot found player
+player-not-found: "&cPlayer not found."
+
+# Command Not Found
+command-not-found: "&cCommand not found please use &7/vmskyblock help &cfor a list of commands."
+
+# Setting island has been updated
+setting-island-updated: "&aSetting island has been updated."
+
+# Player don't have island
+no-island: "&cYou don't have an island."
+
+# Island origin not working
+island-origin-not-working: "&cIsland origin not working, please report this to the server owner."
+
+# Island not found
+island-not-found: "&cIsland not found or you don't own this island."
+
+# Banned by owner of the island
+banned-by-owner: "&cYou are banned by the owner of the island."
+
+# Set allow visitor success
+set-allow-visitor-success: "&aYou are now allowed to visit the island."
+
+# Already has an island
+already-has-island: "&cYou already has an island."
+
+# Island created
+island-created: "&aIsland created."
+
+# Waiting for island to be created
+waiting-for-island-to-be-created: "&aWaiting for island to be created."
+
+# Island deleted
+island-deleted: "&aIsland deleted."
+
+# Waiting for island to be deleted
+waiting-for-island-to-be-deleted: "&aWaiting for island to be deleted."
+
+# Added player to island
+add-member-success: "&aPlayer added to the island."
+
+# Has been added to the island
+has-been-added: "&aYou have been added to the island."
+
+# Removed player from island
+remove-member-success: "&aPlayer removed from the island."
+
+# Player already have island
+player-already-have-island: "&cPlayer already have an island."
+
+# Member exists
+member-exists: "&cPlayer already exists in the island."
+
+# Member not exists
+member-not-exists: "&cPlayer not exists in the island."
+
+# Ban player success
+ban-player-success: "&aPlayer banned from the island."
+
+# Unban player success
+unban-player-success: "&aPlayer unbanned from the island."
+
+# Player banned exists
+player-banned-exists: "&cPlayer already banned from the island."
+
+# Player not banned
+player-not-banned: "&cPlayer is not banned from the island."
+
+# Got kicked from the island
+kicked-from-island: "&cYou got kicked from the island by %player%."
+
+# Kick player success
+kick-player-success: "&aPlayer %player% kicked from the island."
+
+# Out of range island
+out-of-range-island: "&cYou are out of range of the island."
+
+# Update island size
+update-island-size: "&aIsland size updated."
+
+# Island size not valid
+island-size-not-valid: "&cIsland size not valid."
+
+# Add item ban success
+add-item-ban-success: "&aItem banned from the island."
+
+# Unban item success
+unban-item-success: "&aItem unbanned from the island."
+
+# Item banned exists
+item-banned-exists: "&cItem already banned from the island."
+
+# Item not banned
+item-not-banned: "&cItem is not banned from the island."
+
+# Item has been banned
+item-banned: "&cThis item has been banned from the island."
+
+# Hand empty
+hand-empty: "&cYour hand is empty."
+
+# Do with yourself
+do-with-yourself: "&cYou can't do this with yourself."
+
+# Members list
+members-list: "&aMembers list: %members%"
+
+# PvP disabled
+pvp-disabled: "&cPvP is disabled in this island."
+
+# Set Spawn
+set-spawn-success: "&aIsland spawn set."
+
+# Please stand on your island
+please-stand-on-your-island: "&cPlease stand on your island."
+
+# Please don't stand on your island
+please-dont-stand-on-your-island: "&cPlease don't stand on your island."
+
+# Top island
+top-islands: "&aTop Island [&c%limit%&a]:"
+
+# Island top format
+top-islands-format: "&7%rank% &f-> &a%owner% &7- &aLevel: &b%level% &aXp: &f%xp%"
+
+# Visit not allowed
+visit-not-allowed: "&cVisit not allowed in this island."
+
+# Island name set
+set-name-success: "&aIsland name set."
+
+# Complete the quest
+complete-quest: "&aYou have completed the quest &b%quest%."
+
+# Must is number
+must-is-number: "&cMust be a number."
+
+# Name has been changed
+name-has-been-changed: "&aName has been changed."
+
+# Can't do this with the player has permission
+cant-do-this-with-the-player-has-permission: "&cYou can't do this with the player has permission."
+
+# Isn't an owner of the island
+is-not-an-owner-of-the-island: "&cYou aren't the owner of the island."
+
+# Waiting
+waiting: "&6Waiting..."
+
+# Portal has been removed
+portal-has-been-removed: "&aPortal has been removed."
+
+# Portal required level
+portal-required-level: "&cYou need to reach level %level% to use the portal."
+...
