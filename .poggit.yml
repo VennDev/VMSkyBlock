@@ -1,0 +1,29 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/VennDev/VMSkyBlock
+build-by-default: true
+branches:
+- main
+projects:
+  VMSkyBlock:
+    path: ""
+    libs:
+      - src: VennDev/VFormOOPAPI/VFormOOPAPI
+        version: ^2.2.8
+      - src: VennDev/LibVapmPMMP/LibVapmPMMP
+        version: ^2.5.6
+      - src: VennDev/VSendCMDMulti/VSendCMDMulti
+        version: ^1.0.5
+      - src: VennDev/VCache/VCache
+        version: ^1.0.0
+      - src: VennDev/LibVapmPMMP/LibVapmPMMP
+        version: ^2.5.6
+      - src: VennDev/VDoPlayer/VDoPlayer
+        version: ^1.0.1
+      - src: VennDev/VErrorHandler/VErrorHandler
+        version: ^1.0.0
+      - src: VennDev/VDataStorageSystems/VDataStorageSystems
+        version: ^1.0.8
+      - src: VennDev/VapmDatabasePMMP/VapmDatabasePMMP
+        version: ^2.3
+      - src: VennDev/VSendCMDMulti/VSendCMDMulti
+        version: ^1.0.5
+...
