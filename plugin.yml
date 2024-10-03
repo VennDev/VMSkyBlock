@@ -1,7 +1,7 @@
 ---
 name: VMSkyBlock
 main: venndev\vmskyblock\VMSkyBlock
-version: 1.0.0-PREMIUM
+version: 1.0.0
 api: 5.0.0
 author: VennDev
 description: VMSkyBlock is a SkyBlock plugin for PocketMine-MP.
