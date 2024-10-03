@@ -27,5 +27,5 @@ projects:
       - src: VennDev/VSendCMDMulti/VSendCMDMulti
         version: ^1.0.5
       - src: VennDev/VDimensionFix/VDimensionFix
-        version: ^0.0.8-V
+        version: ^0.0.8
 ...
