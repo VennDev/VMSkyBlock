@@ -3,6 +3,7 @@
 
 # Features
 - Handles a large network of servers running on PocketMine-PMMP.
+- Handles events and systems handled asynchronously to make the choreography lighter.
 - The feature stores and loads data quickly on databases such as **MySQL** or **SQLite3** and even on **.yml** file formats
 - There is a separate management software for the data via the database saved by the plugin.
 - The player's island has separate world folders.
