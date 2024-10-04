@@ -8,7 +8,7 @@
 - There is a separate management software for the data via the database saved by the plugin.
 - The player's island has separate world folders.
 - A player has 3 types of islands that serve a variety of purposes that you want to set up specifically for your server.
-- There is a characteristic feature way of a regular SkyBlock plugin. For example: island settings, invitation processing, deletion, adding islands, etc.
+- There is a feature way of a regular SkyBlock plugin. For example: island settings, invitation processing, deletion, adding islands, etc.
 
 # Plugins Required
 - [VPlayerDataSaver](https://github.com/VennDev/VPlayerDataSaver)
